@@ -16,7 +16,6 @@
             --black: #000000;
             --white: #ffffff;
             --mustard: #B17943;
-
         }
         * {
             box-sizing: border-box;
@@ -25,27 +24,54 @@
         }
         .body {
             font-family: 'Montserrat', sans-serif;
+            width: 100vw;         
+            
         }
         html {
             font-size: 62.5%;
         }
-        header{
-            display: block;
-            justify-content: center;
-            font-size:5rem;
+        header nav ul {
+            font-family: roboto;
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            padding: 0 20%;
+            list-style:none;
+            color: var(--white);
+            background-color: var(--brown);
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        nav ul .logo {
+            background-color: white;
+            width: 120px;
+
+        }
+        .barra{
+            padding-top: 25px;             
+            cursor: pointer;
+        }
+        
+        
+        nav ul .logo-container img {
+            display: inline-block;
+            height: 60px;
         }
         
         .grid-container {
+            padding: 15px 10%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             justify-content: center;
             column-width: 100px;
             margin: 2rem 5rem;
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.5rem;
         }
         
         table {
-            width: 100%;
             list-style: none;
             
         }
@@ -55,37 +81,73 @@
             margin: 1rem;
             justify-content: center;
         }
-
         .heart {
             float:right;
-            margin: 1rem;
-            
-        
+            margin: 1rem;   
+            cursor: pointer;
         }
         .macaronimg {
             float:center;
-
-            margin: 0 1.25rem;
+            margin: 0 2rem;
             margin-top: 0%;
         }
-        
-        .card-footer input {
-            display: inline-block;
-           
-            margin: 1rem;
+        .card-footer {
+            margin: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
         }
-        .shopping {
-            float: right;
-            margin: 1rem;
+        .card-footer .shopping {
+            grid-column: 3;
+            place-self: center;
+            justify-self: end;
+            margin-right: 1rem;
+            cursor: pointer;
         }
-
-        
-        
+        .card-footer p {
+            grid-column: 2;
+            place-self: center;
+            justify-self: start;
+        }
+        .card-footer a{
+            width: 38px 106px;
+            display: inline;
+            text-align: center;
+            text-decoration: none;
+            background-color: #e0e2e48a;
+            margin: 15px;
+            padding: 2px 10px;
+            border: 1.5px solid black;
+            grid-column: 1;
+        }
+        footer{
+            width: 100vw;
+            text-align: center;
+            height: 40px;
+            color: white;
+            font-size: 1.5rem;
+            background-color: var(--brown);
+            padding: 12px 0;
+        }
         
     </style>
 <!-- ////////////////////////////////////////////////////////////// -->    
 </head>
 <body>
+    <header>
+        <nav>            
+            <ul>
+                <li class="barra" href="Index.html">HOME</li>
+                <li class="barra" href="#">NEW</li>
+                <li class="barra" href="Macarons.html">MACARON</li>
+                <li class="logo"><a class="logo-container">
+                    <img src="./Icons/logo.png"/>
+                </a></li>
+                <li class="barra" href="Coffee.html">COFFEE</li>
+                <li class="barra" href="#">ABOUT</li>
+                <li class="barra" href="#">CONTACT</li>
+            </ul>            
+        </nav>
+    </header>
     <main class="macarons-grid">
         <section class="grid-container">
             <table class="macarons-container">
@@ -93,7 +155,7 @@
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
                     
-                    <img class="macaronimg" src="./imagenes/blueberry.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/blueberry.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -101,15 +163,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/saled.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/saled.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -117,14 +179,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/cakebatter.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/cakebatter.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -132,14 +195,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/chocolateginger.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/chocolateginger.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -147,14 +211,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/rose.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/rose.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -162,14 +227,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/napolitan.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/napolitan.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -177,14 +243,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/masala.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/masala.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -192,14 +259,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/cayennepper.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/cayennepper.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -207,14 +275,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/pumpkin.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/pumpkin.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -222,14 +291,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/raspberry.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/raspberry.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -237,14 +307,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/applespice.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/applespice.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -252,14 +323,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/spicedroasted.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/spicedroasted.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -267,14 +339,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/spicymango.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/spicymango.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -282,14 +355,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/earlgrey.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/earlgrey.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -297,14 +371,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/woopie.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/woopie.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -312,14 +387,15 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
 
                 <ol class="cards">
                     <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
-                    <img class="macaronimg" src="./imagenes/cayennepepper2.png" width="200" alt="macarons">
+                    <img class="macaronimg" src="./Macarons images/cayennepepper2.png" width="200" alt="macarons">
                     <div class="text-card"> 
                         <br>
                         <p>Blueberry Cream Cheese Macaron</p>
@@ -327,8 +403,9 @@
                         <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img class="shopping" src="https://api.iconify.design/ant-design/shopping-cart-outlined.svg" width=20px/>
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
                 </ol>
             </table>
@@ -336,8 +413,7 @@
     </main>
 <!-- ////////////////////////////////////////////////////////////// -->
     <footer>
-        <p>© 2022 COFFEE CORNER Agency.</p>
-
+        © 2022 COFFEE CORNER Agency.
     </footer>
     
 </body>

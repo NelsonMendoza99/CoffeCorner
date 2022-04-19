@@ -16,237 +16,412 @@
             --black: #000000;
             --white: #ffffff;
             --mustard: #B17943;
-
+        }
+        * {
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
         }
         .body {
             font-family: 'Montserrat', sans-serif;
+            width: 100vw;         
+            
         }
+        html {
+            font-size: 62.5%;
+        }
+        header nav ul {
+            font-family: roboto;
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            padding: 0 20%;
+            list-style:none;
+            color: var(--white);
+            background-color: var(--brown);
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        nav ul .logo {
+            background-color: white;
+            width: 120px;
+
+        }
+        .barra{
+            padding-top: 25px;             
+            cursor: pointer;
+        }
+        
+        
+        nav ul .logo-container img {
+            display: inline-block;
+            height: 60px;
+        }
+        
+        .grid-container {
+            padding: 15px 10%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            justify-content: center;
+            column-width: 100px;
+            margin: 2rem 5rem;
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+        
+        table {
+            list-style: none;
+            
+        }
+        .cards {
+            border: 1.5px solid black;
+            border-radius: 3px;
+            margin: 1rem;
+            justify-content: center;
+        }
+        .heart {
+            margin: 1.5rem;
+            padding: 5px;
+            margin-left: 18.5rem;
+            position: absolute;
+            cursor: pointer;
+        }
+        .coffeeimg {
+            float:center;
+            margin: 1.5rem;
+            margin-bottom: 0;
+        }
+        .card-footer {
+            margin: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .card-footer .shopping {
+            grid-column: 3;
+            place-self: center;
+            justify-self: end;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+        .text-card p{
+            margin: 0;
+            padding: 0 1.5rem;
+        }
+        .card-footer p {
+            grid-column: 2;
+            place-self: center;
+            justify-self: start;
+        }
+        .card-footer a{
+            width: 38px 106px;
+            display: inline;
+            text-align: center;
+            text-decoration: none;
+            background-color: #e0e2e48a;
+            margin: 15px;
+            padding: 2px 10px;
+            border: 1.5px solid black;
+            grid-column: 1;
+            margin-left: 5px;
+            margin-bottom: 
+        }
+        footer{
+            width: 100vw;
+            text-align: center;
+            height: 40px;
+            color: white;
+            font-size: 1.5rem;
+            background-color: var(--brown);
+            padding: 12px 0;
+        }
+        
     </style>
 <!-- ////////////////////////////////////////////////////////////// -->    
 </head>
 <body>
-    <header class="title">
-        <h1>COFFEE</h1>
-        <h5>from our imagination to your heart... ❤️ </h5>
+    <header>
+        <nav>            
+            <ul>
+                <li class="barra" href="Index.html">HOME</li>
+                <li class="barra" href="#">NEW</li>
+                <li class="barra" href="Macarons.html">MACARON</li>
+                <li class="logo"><a class="logo-container">
+                    <img src="./Icons/logo.png"/>
+                </a></li>
+                <li class="barra" href="Coffee.html">COFFEE</li>
+                <li class="barra" href="#">ABOUT</li>
+                <li class="barra" href="#">CONTACT</li>
+            </ul>            
+        </nav>
     </header>
-    <section class="macarons-grid">
-        <div class="grid-container">
-            <div class="macarons-container"></div>
+    <main class="macarons-grid">
+        <section class="grid-container">
+            <table class="macarons-container">
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    
+                    <img class="coffeeimg" src="./Coffee images/CAPPUCCINO.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Frappe</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE CAPPUCCINO</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/MOCHA.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Salted Caramel</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE MOCHA</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/ESPRESSOPANNA.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Flat White</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE ESPRESSO CON PANNA</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/VIENNA.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Vienna</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE VIENNA</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/ESPRESSO.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Cold Brew</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE ESPRESSO</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/AMERICANO.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Caramel Latte</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE AMERICANO</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/MACCHIATTO.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Macchiato</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE MACCHIATTO</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/FLAT WHITE.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Espresso with Panna</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE FLAT WHITE</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/BREVE.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Cortado</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE BREVE</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/CARAMELMOCHA.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Caramel Mocha</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE CARAMEL MOCHA</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/CARAMELLATTE.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Americano</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE CARAMEL LATTE</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/SALTEDCARAMEL.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Mocha</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE SALTED CARAMEL</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/ICEDTOFFE.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Iced Toffee</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE ICED TOFFEE</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/CORTADO.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Breve</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE CORTADO</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/COLDBRE.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Espresso</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE COLD BREW</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
+                </ol>
 
-                <div class="cards">
-                    <img src="/" class="heart icon" alt="/">
-                    <img src="/" class="macaron" alt="/">
+                <ol class="cards">
+                    <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                    <img class="coffeeimg" src="./Coffee images/Rectangle 124.png" width="200" alt="macarons">
                     <div class="text-card"> 
-                        <p>Coffee Cappuccino</p>
-                        <p>$6,00</p>
+                        <br>
+                        <p>COFFEE FRAPPE</p>
+                        
+                        <br>
                     </div>
                     <div class="card-footer">
-                        <input type="button" value="more">
-                        <img src="/" class="shopping-cart" alt="/">
+                        <a href="/">More</a>
+                        <p>$2,50</p>
+                        <img class="shopping" src="./Icons/shoppingcart.svg" width=30px/>
                     </div>
-                </div>
-        </div>
-        
-    </section>
+                </ol>
+            </table>
+        </section>
+    </main>
 <!-- ////////////////////////////////////////////////////////////// -->
     <footer>
-        <p>© 2022 COFFEE CORNER Agency.</p>
-
+        © 2022 COFFEE CORNER Agency.
     </footer>
     
 </body>
