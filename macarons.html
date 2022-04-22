@@ -59,7 +59,7 @@
         }
         
         .grid-container {
-            padding: 15px 10%;
+            padding: 10px 10%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -81,6 +81,7 @@
             margin: 1rem;
             justify-content: center;
         }
+        
         .heart {
             float:right;
             margin: 1rem;   
@@ -103,6 +104,12 @@
             margin-right: 1rem;
             cursor: pointer;
         }
+        .text-card p{
+            margin: 0;
+            padding: 0 1.5rem;
+            height: 20px;
+            max-height: 20px;
+        }
         .card-footer p {
             grid-column: 2;
             place-self: center;
@@ -113,11 +120,15 @@
             display: inline;
             text-align: center;
             text-decoration: none;
-            background-color: #e0e2e48a;
+            background-color: var(--brown);
+            color: var(--white);
             margin: 15px;
             padding: 2px 10px;
-            border: 1.5px solid black;
+            border: 1px solid black;
             grid-column: 1;
+            margin-left: 5px;
+            margin-right: 8px;
+            border-radius: 10px;
         }
         footer{
             width: 100vw;
@@ -128,24 +139,106 @@
             background-color: var(--brown);
             padding: 12px 0;
         }
+        .navbar-shopping-cart {
+        position: relative;
+    }
+        .left {
+            display: none;
+        }
+        .navbar-right{
+            display: none;
+        }
+        @media(max-width: 1035px){
+            .grid-container {
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: auto;
+            column-width: 300px;
+            }
+
+            .barranav {
+                display: flex;
+                place-items: center;
+                margin: 0;
+                padding: 0 5%;
+
+            }
+            nav ul .barra {
+                display: none;
+                        }
+            .navbar-right div{
+                width: 16px;
+                height: 16px;
+                background-color: var(--mustard);
+                border-radius: 50%;
+                font-size: var(--sm);
+                font-weight: bold;
+                display: flex;
+                position:fixed;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                margin-left: 25px;
+            }
+            .logo {
+                margin-left: 10%;
+                justify-items: center;
+            }
+            .left {
+                cursor: pointer;
+            }
+            .right{
+                cursor: pointer;
+            }
+            
+        @media (max-width: 780px) {
+            .grid-container {
+                grid-template-columns: 1fr 1fr ;
+                grid-template-rows: auto;
+                column-width: 300px;
+                }
+        }
+
+        }
+        @media (max-width: 515px){
+
+            .grid-container {
+            grid-template-columns: 1fr ;
+            grid-template-rows: auto;
+            column-width: 300px;
+            }
+            
+            .coffeeimg {
+                width: 250px;
+            }
+            .heart {
+            margin-left: 23.5rem;
+        }
+        }
         
     </style>
 <!-- ////////////////////////////////////////////////////////////// -->    
 </head>
 <body>
     <header>
-        <nav>            
-            <ul>
+        <nav>
+            <ul class="barranav">
+                <li><img class="barranav left" src="./icons/list.png"  alt="menu" ></li>
                 <li class="barra" href="Index.html">HOME</li>
                 <li class="barra" href="#">NEW</li>
                 <li class="barra" href="Macarons.html">MACARON</li>
                 <li class="logo"><a class="logo-container">
-                    <img src="./Icons/logo.png"/>
+                    <img class="logo-img" src="./Icons/logo.png"/>
                 </a></li>
                 <li class="barra" href="Coffee.html">COFFEE</li>
                 <li class="barra" href="#">ABOUT</li>
                 <li class="barra" href="#">CONTACT</li>
-            </ul>            
+                <li class="barranav navbar-right">
+                    <img class="right" src="./Icons/shopping-cart.png" alt="menu" class="menu"> 
+                    <div class="right">
+                        2
+                    </div>    
+                </li>
+            </ul>                      
         </nav>
     </header>
     <main class="macarons-grid">
