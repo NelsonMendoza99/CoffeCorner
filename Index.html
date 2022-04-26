@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
 
     <title>Document</title>
     <style>
@@ -16,7 +17,6 @@
             --black: #000000;
             --white: #ffffff;
             --mustard: #B17943;
-
         }
         .body {
             font-family: 'Montserrat', sans-serif;
@@ -25,150 +25,184 @@
 <!-- ////////////////////////////////////////////////////////////// -->    
 </head>
 <body>
-    <header class="carroussel">
-        <img src="/" alt="Photo 1">
-        <img src="/" alt="">
-        <img src="/" alt="">
-        <img src="/" alt="">
-        <!-- Añadir botones de transicion por imagen -->
+    <header>
+        <nav>
+            <ul class="barranav">
+                <li><img class="barranav left" src="./icons/list.png"  alt="menu" ></li>
+                <li class="barra" href="Index.html">HOME</li>
+                <li class="barra" href="#">NEW</li>
+                <li class="barra" href="Macarons.html">MACARON</li>
+                <li class="logo"><a class="logo-container">
+                    <img class="logo-img" src="./Icons/logo.png"/>
+                </a></li>
+                <li class="barra" href="Coffee.html">COFFEE</li>
+                <li class="barra" href="#">ABOUT</li>
+                <li class="barra" href="#">CONTACT</li>
+                <li class="barranav navbar-right">
+                    <img class="right" src="./Icons/shopping-cart.png" alt="menu" class="menu"> 
+                    <div class="right">
+                        2
+                    </div>    
+                </li>
+            </ul>                      
+        </nav>
+        <section class="carroussel">
+            <img src="./Home images/Carrousel1.png" alt="Photo carroussel">
+            <img id="hidden-carroussel" src="./Home images/carrousel2.png" alt="Photo carroussel">
+            <img id="hidden-carroussel" src="./Home images/carrousel3.png" alt="Photo carroussel">
+            <img id="hidden-carroussel" src="./Home images/carrousel4.png" alt="Photo carroussel">
+            <!-- Añadir botones de transicion por imagen   --> 
+        </section>       
+               
     </header>
 <!-- ////////////////////////////////////////////////////////////// -->
-    <section>
-        <div class="New-Products">
-            <div class="background-image">
-                <p>NEW</p>
-                <img src="/">
+    <main>
+        <section class="new-products">
+            <p>NEW</p>
+            <div class="background-image">                
+                <img src="./Home images/backtriada.png">
             </div>
+
             <div class="new-coffee">
-                <p>DALGONA COFEE</p>
-                <img src="/" alt="">
-                <img src="/" alt="">
-                <img src="/" alt="">
-            </div>
-            <div>
-                <p>The goal of coffee DALGONA is to create a light, whipped coffee that’s
-                somewhat similar to a dense whipped cream. The mixture is served over milk,
-                sometimes with ice. To add to the presentation and enhance the flavor a bit,
-                some sprinkle the top with cocoa, coffee powder, or crumbled cookies. 
-                Dalgona coffee is typically served with a straw to stir the whipped coffee
-                concoction into the milk.</p>
-            </div>
-        </div>
-        <div class="macarons-top">
-
-            <div>
-                <p>MACARONS</p>
-                <p>Top selection</p>
-            </div>
-
-            <div class="macarons-container">
-                <div class="macarons-card"
-                    <img src="./Macarons images/" class="heart" alt="">
-                    <img src="/" class="macaron" alt="">
-                    <div>
-                        <p>Chocolate Ganache macaron</p>
-                        <p>5,00$</p>
-                    </div>
-                    <div>
-                        <input type="button" value="MORE"/>
-                        <img src="/" class="addtocart" alt="">
-                    </div>
-                </div>
-                
-                <div class="macarons-card"
-                    <img src="/" class="heart" alt="">
-                    <img src="/" class="macaron" alt="">
-                    <div>
-                        <p>Lavender coconut macaron</p>
-                        <p>4,50$</p>
-                    </div>
-                    <div>
-                        <input type="button" value="MORE"/>
-                        <img src="/" class="addtocart" alt="">
-                    </div>
-                </div>
-                    
-                <div class="macarons-card"
-                    <img src="/" class="heart" alt="">
-                    <img src="/" class="macaron" alt="">
-                    <div>
-                        <p>Mint macaron</p>
-                        <p>5,00$</p>
-                    </div>
-                    <div>
-                        <input type="button" value="MORE"/>
-                        <img src="/" class="addtocart" alt="">
-                    </div>
-                </div>
+                <img src="./Home images/triada1.png" alt="new-coffee">
+                <img src="./Home images/triada2.png" alt="new-coffee">
+                <img src="./Home images/triada3.png" alt="new-coffee">
             </div>
             
-            <div>
-                <input type="button" value="MORE"/>
-            </div>
+            <h2 class="dalgona">DALGONA COFEE</h2>
 
-        </div>
+            <p class="parrafo">The goal of coffee DALGONA is to create a light, whipped coffee that’s
+            somewhat similar to a dense whipped cream. The mixture is served over milk,
+            sometimes with ice. To add to the presentation and enhance the flavor a bit,
+            some sprinkle the top with cocoa, coffee powder, or crumbled cookies. 
+            Dalgona coffee is typically served with a straw to stir the whipped coffee
+            concoction into the milk.</p>
+            
+        </section>
 
-        <div class="coffee-top">
-
-            <div>
-                <p>COFFEE</p>
+        <div class="macarons__cards-container">
+            <div class="macarons-top">
+                <h2>MACARONS</h2>
                 <p>Top selection</p>
             </div>
-
-            <div class="coffee-container">
-
-                <div class="coffee-card"
-                    <img src="/" class="heart" alt="">
-                    <img src="/" class="macaron" alt="">
-                    <div>
-                        <p>COFFEE CAPPUCCINO</p>
-                        <p>8,00$</p>
-                    </div>
-                    <div>
-                        <input type="button" value="MORE"/>
-                        <img src="/" class="addtocart" alt="">
-                    </div>
+            <ol class="macarons-card macarons-cards1 cards">
+                <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
+                <img class="macaronimg" src="./Home images/macaron1.png" width="200" alt="macarons">
+                <div class="text-card"> 
+                    <br>
+                    <p>Blueberry Cream Cheese Macaron</p>                        
+                    <br>
                 </div>
+                <div class="card-footer">
+                    <a href="/">More</a>
+                    <p>$2,50</p>
+                    <img class="shopping" src="./Icons/shoppingcart.svg" width=45px/>
+                </div>
+            </ol>
+            <ol class="macarons-card macarons-cards2 cards">
+                <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
+                <img class="macaronimg" src="./Home images/macaron2.png" width="200" alt="macarons">
+                <div class="text-card"> 
+                    <br>
+                    <p>Blueberry Cream Cheese Macaron</p>                        
+                    <br>
+                </div>
+                <div class="card-footer">
+                    <a href="/">More</a>
+                    <p>$2,50</p>
+                    <img class="shopping" src="./Icons/shoppingcart.svg" width=45px/>
+                </div>
+            </ol>
+            <ol class="macarons-card macarons-cards3 cards">
+                <img class="heart" src="https://api.iconify.design/ant-design/heart-outlined.svg" width=30px/>
+                <img class="macaronimg" src="./Home images/macaron3.png" width="200" alt="macarons">
+                <div class="text-card"> 
+                    <br>
+                    <p>Blueberry Cream Cheese Macaron</p>                        
+                    <br>
+                </div>
+                <div class="card-footer">
+                    <a href="/">More</a>
+                    <p>$2,50</p>
+                    <img class="shopping" src="./Icons/shoppingcart.svg" width=45px/>
+                </div>
+            </ol>
+            <input class="macaron-more" type="button" value="MORE"/>
+        </div>    
+        <hr>
+        <div class="coffee__cards-container">
+            <div class="coffee-top">
+                <h2>COFFEE</h2>
+                <p>Top selection</p>
+            </div>
+            <ol class="cards coffee-cards1 coffee-card">
+                <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
                 
-                <div class="coffee-card"
-                    <img src="/" class="heart" alt="">
-                    <img src="/" class="macaron" alt="">
-                    <div>
-                        <p>COFFEE MOCHA</p>
-                        <p>6,00$</p>
-                    </div>
-                    <div>
-                        <input type="button" value="MORE"/>
-                        <img src="/" class="addtocart" alt="">
-                    </div>
+                <img class="coffeeimg" src="./Home images/CUARTETO1.png" width="200" alt="macarons">
+                <div class="text-card"> 
+                    <br>
+                    <p>COFFEE CAPPUCCINO</p>                    
+                    <br>
                 </div>
-                    
-                <div class="coffee-card"
-                    <img src="/" class="heart" alt="">
-                    <img src="/" class="macaron" alt="">
-                    <div>
-                        <p>COFFEE VIENNA</p>
-                        <p>6,50$</p>
-                    </div>
-                    <div>
-                        <input type="button" value="MORE"/>
-                        <img src="/" class="addtocart" alt="">
-                    </div>
+                <div class="card-footer">
+                    <a href="/">More</a>
+                    <p>$2,50</p>
+                    <img class="shopping" src="./Icons/shoppingcart.svg" width=45px/>
                 </div>
-
-            </div>
-            
-            <div>
-                <input type="button" value="MORE"/>
-            </div>
-
-        </div>
-        <div class="about">
+            </ol>
+            <ol class="cards coffee-cards2 coffee-card">
+                <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                
+                <img class="coffeeimg" src="./Home images/CUARTETO2.png" width="200" alt="macarons">
+                <div class="text-card"> 
+                    <br>
+                    <p>COFFEE CAPPUCCINO</p>                    
+                    <br>
+                </div>
+                <div class="card-footer">
+                    <a href="/">More</a>
+                    <p>$2,50</p>
+                    <img class="shopping" src="./Icons/shoppingcart.svg" width=45px/>
+                </div>
+            </ol>
+            <ol class="cards coffee-cards3 coffee-card">
+                <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                
+                <img class="coffeeimg" src="./Home images/cuarteto3.png" width="200" alt="macarons">
+                <div class="text-card"> 
+                    <br>
+                    <p>COFFEE CAPPUCCINO</p>                    
+                    <br>
+                </div>
+                <div class="card-footer">
+                    <a href="/">More</a>
+                    <p>$2,50</p>
+                    <img class="shopping" src="./Icons/shoppingcart.svg" width=45px/>
+                </div>
+            </ol>  
+            <ol class="cards coffee-cards4 coffee-card">
+                <img class="heart" src="./Coffee images/Whiteheartlogo.png" width=30px/>
+                
+                <img class="coffeeimg" src="./Home images/cuarteto4.png" width="200" alt="macarons">
+                <div class="text-card"> 
+                    <br>
+                    <p>COFFEE CAPPUCCINO</p>                        
+                    <br>
+                </div>
+                <div class="card-footer">
+                    <a href="/">More</a>
+                    <p>$2,50</p>
+                    <img class="shopping" src="./Icons/shoppingcart.svg" width=45px/>
+                </div>
+            </ol>
+            <input class="coffee-more" type="button" value="MORE">              
+        </div>          
+        <section class="about">
             <div class="picture-selection">
-                <img src="/" alt="">
-                <img src="/" alt="">
-                <img src="/" alt="">
-                <img src="/" alt="">
+                <img src="./Home images/about1.png" alt="about-picture">
+                <img src="./Home images/about2.png" alt="about-picture">
+                <img src="./Home images/about3.png" alt="about-picture">
+                <img src="./Home images/about4.png" alt="about-picture">
             </div>
             <div class="about-text">
                 <p>COFFEE CORNER </p>
@@ -207,8 +241,8 @@
                         <p>7:00 - 2:00</p>
                         <p>3:00 - 11:00</p>
                     </div>
-                <div class="form">
-                    <div>
+                <form>
+                    <div class="form-title">
                         <p>Have a question?</p>
                         <p>Get in touch by submitting the form below</p>
                     </div>
@@ -219,14 +253,11 @@
                         <input type="text" placeholder="Subject">
                         <input type="button" value="submit">
                     </form>
-                </div>
+                </form>
                 </div>
             </div>
-        </div>
-
-
-
-    </section>
+        </section> -->
+    </main>
 <!-- ////////////////////////////////////////////////////////////// -->
     <footer>
         <p>© 2022 COFFEE CORNER Agency.</p>
