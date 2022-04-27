@@ -24,11 +24,13 @@
         }
         .body {
             font-family: 'Montserrat', sans-serif;
-            width: 100vw;         
+            width: 100vw; 
+               
             
         }
         html {
             font-size: 62.5%;
+            overflow-x: hidden;     
         }
         header nav ul {
             font-family: roboto;
@@ -41,6 +43,12 @@
             background-color: var(--brown);
             font-size: 1.5rem;
             text-align: center;
+        }
+        header nav ul a{
+            text-decoration: none;
+            color: white;
+            margin: 0;
+            padding: 0;
         }
         nav ul .logo {
             background-color: white;
@@ -227,15 +235,15 @@
         <nav>
             <ul class="barranav">
                 <li><img class="barranav left" src="./icons/list.png"  alt="menu" ></li>
-                <li class="barra" href="Index.html">HOME</li>
-                <li class="barra" href="#">NEW</li>
-                <li class="barra" href="Macarons.html">MACARON</li>
+                <li class="barra"><a href="Index.html">HOME</a></li>
+                <li class="barra"><a>NEW</a></li>
+                <li class="barra"><a href="Macarons.html">MACARONS</a></li>
                 <li class="logo"><a class="logo-container">
                     <img class="logo-img" src="./Icons/logo.png"/>
                 </a></li>
-                <li class="barra" href="Coffee.html">COFFEE</li>
-                <li class="barra" href="#">ABOUT</li>
-                <li class="barra" href="#">CONTACT</li>
+                <li class="barra"><a href="Coffee.html">COFFEE</a></li>
+                <li class="barra"><a>ABOUT</a></li>
+                <li class="barra"><a>CONTACT</a></li>
                 <li class="barranav navbar-right">
                     <img class="right" src="./Icons/shopping-cart.png" alt="menu" class="menu"> 
                     <div class="right">

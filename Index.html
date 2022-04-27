@@ -9,19 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./style.css">
 
-    <title>Document</title>
-    <style>
-        :root{
-            --brown: #3B2313;
-            --grey: #c4c4c4;
-            --black: #000000;
-            --white: #ffffff;
-            --mustard: #B17943;
-        }
-        .body {
-            font-family: 'Montserrat', sans-serif;
-        }
-    </style>
+    <title>Coffe Corner | YOUR SWEET TASTE</title>
 <!-- ////////////////////////////////////////////////////////////// -->    
 </head>
 <body>
@@ -29,15 +17,15 @@
         <nav>
             <ul class="barranav">
                 <li><img class="barranav left" src="./icons/list.png"  alt="menu" ></li>
-                <li class="barra" href="Index.html">HOME</li>
-                <li class="barra" href="#">NEW</li>
-                <li class="barra" href="Macarons.html">MACARON</li>
+                <li class="barra"><a href="Index.html">HOME</a></li>
+                <li class="barra"><a>NEW</a></li>
+                <li class="barra"><a href="Macarons.html">MACARONS</a></li>
                 <li class="logo"><a class="logo-container">
                     <img class="logo-img" src="./Icons/logo.png"/>
                 </a></li>
-                <li class="barra" href="Coffee.html">COFFEE</li>
-                <li class="barra" href="#">ABOUT</li>
-                <li class="barra" href="#">CONTACT</li>
+                <li class="barra"><a href="Coffee.html">COFFEE</a></li>
+                <li class="barra"><a>ABOUT</a></li>
+                <li class="barra"><a>CONTACT</a></li>
                 <li class="barranav navbar-right">
                     <img class="right" src="./Icons/shopping-cart.png" alt="menu" class="menu"> 
                     <div class="right">
@@ -196,67 +184,66 @@
                 </div>
             </ol>
             <input class="coffee-more" type="button" value="MORE">              
-        </div>          
+        </div>       
+        <hr>
+        <h2 class="about-top">ABOUT</h2>
         <section class="about">
-            <div class="picture-selection">
+            <div></div>
+            <h2>COFFEE CORNER </h2>
+            <p class="subtitle" >COFFEE TIME, ANYTIME</p>
+            <p class="paragraph">If you’re looking for a place where to relax and read
+            some novels or whatever, COFFEE CORNER coffeeshop would be 
+            the best. It has the best coffee available and even some fresh
+            baked goods as well. The ambiance is relaxing, and the staffs
+            are highly capable.</p>
+            <input type="button" value="MORE"/>            
+            <figure class="picture-selection">
                 <img src="./Home images/about1.png" alt="about-picture">
                 <img src="./Home images/about2.png" alt="about-picture">
                 <img src="./Home images/about3.png" alt="about-picture">
                 <img src="./Home images/about4.png" alt="about-picture">
+            </figure>                
+        </section>
+        <section class="contact">
+            <div class="contact-title">
+                <p>CONTACT</p>
             </div>
-            <div class="about-text">
-                <p>COFFEE CORNER </p>
-                <p>COFFEE TIME, ANYTIME</p>
-                <p>If you’re looking for a place where to relax and read
-                some novels or whatever, COFFEE CORNER coffeeshop would be 
-                the best. It has the best coffee available and even some fresh
-                baked goods as well. The ambiance is relaxing, and the staffs
-                are highly capable.</p>
-                <div>
-                    <input type="button" value="MORE"/>
-                </div>
-                
+            <div class="map">
+                <iframe class="map-image"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12203.734406151829!2d44.472381191635684!3d40.121483172020156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406ab936cea02b7d%3A0x9217315de6f173d9!2s3rd%20street.%2C%20Yerevan%2C%20Armenia!5e0!3m2!1sen!2s!4v1649362926681!5m2!1sen!2s" width="100%" height="250" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="contact">
-                <div>
-                    <p>CONTACT</p>
-                </div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12203.734406151829!2d44.472381191635684!3d40.121483172020156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406ab936cea02b7d%3A0x9217315de6f173d9!2s3rd%20street.%2C%20Yerevan%2C%20Armenia!5e0!3m2!1sen!2s!4v1649362926681!5m2!1sen!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="address">
-                    <div class="address">
-                        <p>ADDRESS</p>
-                        <P>Amiyan 3 Street, Yerevan, Armenia</P>
-
-                        <p>PHONE</p>
-                        <P>+374 93 00-00-00</P>
-
-                        <p>MAIL</p>
-                        <P>info@coffeecorner.com</P>
-                    </div>
+            <div class="address">
+                <div class="address-right">
+                    <p><strong>ADDRESS</strong></p>
+                    <P>Amiyan 3 Street, Yerevan, Armenia</P>
+                    <br>
+                    <p><strong>PHONE</strong></p>
+                    <P>+374 93 00-00-00</P>
+                    <br>
+                    <p><strong>MAIL</strong></p>
+                    <P>info@coffeecorner.com</P>
+                    <br>
                     <div class="schedule">
-                        <p>WE'RE OPEN</p>
-                        <p>Daily:</p>
+                        <h4>WE'RE OPEN DAILY</h4>
                         <p>7:00 - 2:00</p>
                         <p>3:00 - 11:00</p>
                     </div>
-                <form>
-                    <div class="form-title">
+                </div>
+            <section class="form-container" >
+                <form address-left>       
+                    <label class="form-title">
                         <p>Have a question?</p>
                         <p>Get in touch by submitting the form below</p>
-                    </div>
-                    <form action="">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                        <input type="text" placeholder="Email">
-                        <input type="text" placeholder="Subject">
-                        <input type="button" value="submit">
-                    </form>
+                    </label>
+                    <input class="form-name" type="text" placeholder=" First Name">
+                    <input class="form-lastName" type="text" placeholder=" Last Name">
+                    <input class="form-email" type="text" placeholder=" Email">
+                    <input class="form-subject" type="text" placeholder=" Subject">
+                    <button class="form-button" type="button">Submit</button>                
                 </form>
-                </div>
+            </section> 
+           
             </div>
-        </section> -->
+        </section>
     </main>
 <!-- ////////////////////////////////////////////////////////////// -->
     <footer>
