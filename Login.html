@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        :root{
+        --brown: #3B2313;
+        --grey: #c4c4c4;
+        --black: #000000;
+        --white: #ffffff;
+        --mustard: #B17943;
+        --beige: #DCC2A9;
+    }
+    .body {
+        font-family: 'Roboto', sans-serif;
+    }
+    * {
+        box-sizing: border-box;
+        margin:0;
+        padding: 0;
+        overflow: hidden;
+    }
+    html{
+        font-size: 62.5%
+    }
+    header #hidden-carroussel {
+        display: none;
+    }
+    header nav ul {
+        text-decoration: none;
+        font-family: roboto;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        padding: 0 20%;
+        list-style:none;
+        color: var(--white);
+        background-color: var(--brown);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    header nav ul a{
+        text-decoration: none;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul .logo {
+        background-color: white;
+        width: 120px;
+
+    }
+    .barra{
+        padding-top: 25px;             
+        cursor: pointer;
+    }
+    nav ul .logo-container img {
+        display: inline-block;
+        height: 60px;
+    }
+    .navbar-shopping-cart {
+        position: relative;
+    }
+    .left {
+        display: none;
+        }
+    .navbar-right{
+        display: none;
+        }
+    /* Main */
+    main {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100vw;
+        height: 85vh;
+    }
+    .login__left-image {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        position: relative;
+        height: 100%;
+        width: cover;
+        padding: 5%;
+        align-self: center;
+        justify-self: center;
+    }
+    .login__right-form {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        padding: 5%;
+        width: 100%;
+        height: 100%;
+    }
+    .login__right-form .login-title {
+        margin-top: 30px;
+        font-size: 2rem;
+        font-weight: 300;
+        text-align: center;
+    }
+    .login__right-form .login-label {
+        font-size: 1.5rem;
+        text-align: center;
+        border: 1px solid var(--beige);
+        background: var(--beige);
+        margin: 20px 20%;
+        margin-bottom: 60px;
+    }
+    .login__right-form label {
+        width: 100%;
+        display: block;
+        text-align: left;
+        margin: 4px 0;
+        margin-left: 10%;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    .login__right-form input {
+        width: 80%;
+        height: 40px;
+        display: block;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 8px;
+        margin-left: 12%;
+        font-size: 1.5rem;
+        line-height: 40px;
+        background-color: var(--grey);
+        border: none;
+        border-radius: 15px;
+    }
+    .login__right-form button {
+        cursor: pointer;
+        display: block;
+        margin-left: 12%;
+        border: none;
+        background: var(--beige);
+        padding: 5px 10px;
+        margin-top: 40px
+    }
+    .login__right-form a {
+        display: block;
+        color: var(--brown);
+        margin-left: 12%;
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+    .login__right-form .register-link{
+        margin-top: 0;
+    }
+    .login__right-form a:hover {
+        color: var(--mustard);
+    }
+    .login__right-form button:hover {
+        background: var(--mustard);
+    }
+    
+    /* Footer */
+    footer{
+        width: 100vw;
+        text-align: center;
+        height: 40px;
+        color: white;
+        font-size: 1.5rem;
+        background-color: var(--brown);
+        padding: 12px 0;
+    }
+    </style>
+
+    <title>Coffe Corner | YOUR SWEET TASTE</title>
+<!-- ////////////////////////////////////////////////////////////// -->    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="barranav">
+                <li><img class="barranav left" src="./icons/list.png"  alt="menu" ></li>
+                <li class="barra"><a href="Index.html">HOME</a></li>
+                <li class="barra"><a>NEW</a></li>
+                <li class="barra"><a href="Macarons.html">MACARONS</a></li>
+                <li class="logo"><a class="logo-container">
+                    <img class="logo-img" src="./Icons/logo.png"/>
+                </a></li>
+                <li class="barra"><a href="Coffee.html">COFFEE</a></li>
+                <li class="barra"><a>ABOUT</a></li>
+                <li class="barra"><a>CONTACT</a></li>
+                <li class="barranav navbar-right">
+                    <img class="right" src="./Icons/shopping-cart.png" alt="menu" class="menu"> 
+                    <div class="right">
+                        2
+                    </div>    
+                </li>
+            </ul>                      
+        </nav>
+    </header>
+<!-- ////////////////////////////////////////////////////////////// -->
+    <main>
+        <img class="login__left-image" src="./Home images/Login.png" alt="Login Image">        
+        <section class="login__right-form">
+            <p class="login-title">REGISTER HERE</p>
+            <p class="login-label">You need to log in to access this page</p>
+            <label for="email-input">Email Address</label>
+            <input type="email" id="email-input" placeholder="    coffeeEmail@Example.com">
+            <label for="password-input">Password</label>
+            <input type="password" id="password-input" placeholder="    **********">
+            <button type="submit" class="login-form">REGISTER</button>
+            <a href="#">Forgot your password?</a>
+            <a class="register-link" href="#">Create an account</a>
+        </section>
+
+        
+    </main>
+<!-- ////////////////////////////////////////////////////////////// -->
+    <footer>
+        <p>© 2022 COFFEE CORNER Agency.</p>
+
+    </footer>
+    
+</body>
+</html>
